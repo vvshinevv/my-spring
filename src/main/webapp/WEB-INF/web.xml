@@ -16,4 +16,13 @@
 		<servlet-name>helloServlet</servlet-name>
 		<url-pattern>/hello</url-pattern>
 	</servlet-mapping>
+
+	<filter>
+		<filter-name>myFilter</filter-name>
+		<filter-class>my.spring.filter.MyFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>myFilter</filter-name>
+		<servlet-name>helloServlet</servlet-name>
+	</filter-mapping>
 </web-app>
